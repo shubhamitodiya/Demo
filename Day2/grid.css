@@ -1,0 +1,25 @@
+* {
+    background: rgb(87, 69, 69);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    background: lightblue;
+    border: 1px solid darkblue;
+    text-align: center;
+    padding: 20px;
+}
+
+#three {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+#z {
+    grid-column: span 3;
+}

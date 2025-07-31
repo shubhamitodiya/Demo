@@ -1,0 +1,45 @@
+body{
+    background: lightgreen;
+    text-align: center;
+}
+div{
+    background: yellow;
+    height: 200px;
+    width:200px;
+    /* position: relative; */
+    animation: mybox 3s infinite alternate;
+}
+@keyframes mybox{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(200px);
+    }
+}
+.box{
+    background: darkred;
+    height: 150px;
+    width: 150px;
+    margin-left: 500px;
+    margin-top: 100px;
+    animation-name: hii;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes hii{
+    0%{
+        transforn:scale(1)rotate(0 deg);
+    }
+    50%{
+        transform:scale(2)rotate(180deg);
+        border-radius: 50%;
+        background: blue;
+    }
+    100%{
+        transform:scale(3)rotate(360deg);
+        border-radius: 100%;
+        background: yellow;
+    }
+
+}
